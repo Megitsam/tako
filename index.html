@@ -1,0 +1,43 @@
+Valentine's Day
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>For Tako</title>
+    <style type="text/css">
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      form {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        background: #9775fa;
+        border-radius: 4px;
+        box-shadow: 4px 4px 30px 0 rgba(0, 0, 0, 0.1);
+      }
+      button {
+        padding: 5px 10px;
+        margin-left: 30%;
+        border-radius: 2px;
+      }
+    </style>
+  </head>
+  <body style="background: #d0bfff; color: #fff">
+    <form>
+      <h1 id="show"></h1>
+      <button type="button" onclick="button()">Press here</button>
+    </form>
+
+    <script>
+      var show = document.getElementById("show").value;
+      function button() {
+        document.getElementById("show").innerHTML =
+          " 🤍Happy Valentine's Day Tako🤍";
+      }
+    </script>
+  </body>
+</html>
